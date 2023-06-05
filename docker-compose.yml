@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  webapp:
+    platform: linux/amd64
+    image: webapp
+    build:
+      context: happyhacking-react
+    ports:
+      - "8080:5173"
+  tgbot:
+    platform: linux/amd64
+    image: tgbot
+    build:
+      context: happyhacking-telegraf
