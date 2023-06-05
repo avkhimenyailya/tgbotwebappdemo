@@ -1,3 +1,4 @@
+version: "3.3"
 services:
   webappjs:
     platform: linux/amd64
