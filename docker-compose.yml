@@ -1,13 +1,15 @@
 services:
-  webapp:
+  webappjs:
     platform: linux/amd64
     image: webapp
     build:
       context: happyhacking-react
+      dockerfile: Dockerfile
     ports:
       - "8080:5173"
-  tgbot:
+  tgbotjs:
     platform: linux/amd64
     image: tgbot
     build:
       context: happyhacking-telegraf
+      dockerfile: Dockerfile
