@@ -4,5 +4,4 @@ COPY package.json package-lock.json ./
 RUN npm ci
 COPY src  ./src
 COPY index.html ./
-EXPOSE 5173
-CMD npm run devdsfs
+CMD npm run dev
