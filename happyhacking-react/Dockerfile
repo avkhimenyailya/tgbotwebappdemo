@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY src  ./src
-COPY index.html tsconfig.json tsconfig.node.json vite.config.ts .eslintrc.json ./
+COPY index.html ./
 CMD npm run dev
