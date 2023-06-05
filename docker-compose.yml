@@ -1,7 +1,6 @@
 version: "3.3"
 services:
   webappjs:
-    platform: linux/amd64
     image: webapp
     build:
       context: happyhacking-react
@@ -9,7 +8,6 @@ services:
     ports:
       - "8080:5173"
   tgbotjs:
-    platform: linux/amd64
     image: tgbot
     build:
       context: happyhacking-telegraf
