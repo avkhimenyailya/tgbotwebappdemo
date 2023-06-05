@@ -6,7 +6,7 @@ services:
       context: happyhacking-react
       dockerfile: Dockerfile
     ports:
-      - "8080:8080"
+      - "8080:5173"
   tgbotjs:
     image: tgbot
     build:
