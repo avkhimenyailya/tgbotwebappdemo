@@ -4,4 +4,4 @@ COPY package.json package-lock.json ./
 RUN npm ci
 COPY src  ./src
 COPY index.html ./
-CMD npm run dev
+CMD npm run host
