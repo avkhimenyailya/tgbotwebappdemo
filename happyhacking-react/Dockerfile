@@ -4,5 +4,5 @@ COPY package.json package-lock.json ./
 RUN npm ci
 COPY src  ./src
 COPY index.html ./
-EXPOSE 8080
+EXPOSE 5173
 CMD npm run dev
